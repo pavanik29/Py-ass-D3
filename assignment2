@@ -1,0 +1,26 @@
+sno = input("Enter student number: ")
+sname = input("Enter student name: ")
+group = input("Enter student group: ")
+s1 = float(input("Enter marks for subject 1: "))
+s2 = float(input("Enter marks for subject 2: "))
+s3 = float(input("Enter marks for subject 3: "))
+tot = s1 + s2 + s3
+avg = tot/ 3
+if avg >= 90:
+    grade = "O-Grade"
+elif avg >= 80:
+    grade = "A-Grade"
+elif avg >= 70:
+    grade = "B-Grade"
+elif avg >= 60:
+    grade = "C-Grade"
+elif avg >= 50:
+    grade = "D-Grade"
+else:
+    grade = "Pass"
+print("Student Number:", sno)
+print("Student Name:", sname)
+print("Group:", group)
+print("Total Marks:", tot)
+print("Average Marks:", avg)
+print("Grade:", grade)
